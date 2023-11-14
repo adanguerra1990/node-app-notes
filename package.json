@@ -1,7 +1,6 @@
 {
   "name": "parte3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -16,5 +15,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adanguerra1990/node-app-notes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adanguerra1990/node-app-notes/issues"
+  },
+  "homepage": "https://github.com/adanguerra1990/node-app-notes#readme",
+  "description": ""
 }
