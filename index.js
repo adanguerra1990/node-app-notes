@@ -11,13 +11,14 @@ const requestLogger = (request, response, next) => {
     next()
 }
 
-const unknownEndpoint = (request, response) => {
+const unknownEndpoint = (request, response, next) => {
     response.send(404).send({error: 'unknown endpoint'})
 }
 
+app.use(express.json())
 app.use(cors())
 app.use(requestLogger)
-app.use(express.json())
+app.use(express.static('dist'))
 
 let notes = [
     {
